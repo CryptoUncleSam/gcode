@@ -1,0 +1,19 @@
+{
+  "name": "withdrawHashmaker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "adjust": "node ./adjust_gcode.js",
+    "split": "node ./split_gcode.js",
+    "merge": "node ./merge_gcode.js",
+    "protect": "node ./protect_z_drop.js"
+
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  }
+}
