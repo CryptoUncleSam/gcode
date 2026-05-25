@@ -14,7 +14,7 @@ const output = fs.createWriteStream(outputFile);
 
 rl.on('line', (line) => {
   // Updated regex to match your G-code format
-  const match = line.match(/^G1\s+Z\s*(-?\d*\.?\d+)\s*F\s*200(\.00)?/);
+  const match = line.match(/^G1\s+Z\s*(-?\d*\.?\d+)\s*F\s*30(\.00)?/);
   if (match) {
     const zValue = parseFloat(match[1]);
     const newZ = (zValue + 1.5).toFixed(3);

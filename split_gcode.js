@@ -4,7 +4,7 @@ const readline = require('readline');
 const ngcFiles = fs.readdirSync('.').filter(file => file.endsWith('.cnc'));
 const inputFile = ngcFiles[0];
 fileName = inputFile.replace(/\.cnc$/, '');
-const numParts =15;
+const numParts =3;
 
 async function splitGcodeFile() {
   try {
